@@ -6,3 +6,17 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+chrono = "0.4.19"
+itertools = "0.10.3"
+
+[dependencies.clap]
+version = "3.1.6"
+features = ["derive"]
+
+[dependencies.tokio]
+version = "1.17.0"
+features = ["macros", "rt-multi-thread"]
+
+[dependencies.hyper]
+version = "0.14.17"
+features = ["http1", "http2", "client"]
